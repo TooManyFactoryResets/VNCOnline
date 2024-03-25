@@ -30,7 +30,7 @@ update-pot:
 		../core/*.js \
 		../core/input/*.js
 	./xgettext-html --output=noVNC.html.pot \
-		../vnc.html
+		../index.html
 	msgcat --output-file=noVNC.pot \
 		--sort-by-file noVNC.js.pot noVNC.html.pot
 	rm -f noVNC.js.pot noVNC.html.pot
